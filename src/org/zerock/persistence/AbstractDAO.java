@@ -1,4 +1,5 @@
 package org.zerock.persistence;
+
 //d
 import org.apache.commons.dbcp.BasicDataSource;
 
@@ -17,8 +18,8 @@ public abstract class AbstractDAO {
 	protected AbstractDAO() throws Exception { // 생성자 필요
 		dataSource = new BasicDataSource();
 		dataSource.setUrl("jdbc:oracle:thin:@192.168.0.218:1521:XE");
-		dataSource.setUsername("user00");
-		dataSource.setPassword("user00");
+		dataSource.setUsername("board");
+		dataSource.setPassword("board");
 		dataSource.setInitialSize(10); // 10개의 커넥션이 맺어짐
 		dataSource.setMinIdle(5);
 
