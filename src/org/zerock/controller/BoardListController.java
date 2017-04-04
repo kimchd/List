@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.zerock.persistence.BoardDAO;
 
 /**
- * Servlet implementation class BoardListController
+ * Servlet implement1ation class BoardListController
  */
-@WebServlet("/BoardListController")
+@WebServlet("/list")
 public class BoardListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private BoardDAO dao;
@@ -38,6 +38,8 @@ public class BoardListController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		request.getRequestDispatcher("/WEB-INF/board/list.jsp").forward(request, response);
 	}
 
 	/**
