@@ -144,8 +144,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                                     <C:forEach items="${list}" var="list">
                                         <tr class="odd gradeX">
                                             <td>${list.bno }</td>
-                                            <td>${list.bno }</td>
-                                            <td>${list.bno }</td>
+                                            <td>${list.title }</td>
+                                            <td>${list.writer }</td>
                                             <td class="center">4</td>
                                             <td class="center">X</td>
                                         </tr>
